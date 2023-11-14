@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<!-- saved from url=(0043)http://127.0.0.1:5500/TUT%2010.2/index.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Nextflix Homepage</title>
+<link rel="stylesheet" href="./My Nextflix Homepage_files/style.css"></head>
+
+<body>
+    <div class="header">
+        <nav>
+            <img src="./My Nextflix Homepage_files/Logonetflix.png" class="logo">
+            <div>
+                <button class="language-btn">English <img src="./My Nextflix Homepage_files/6364428.png"></button>
+                <button>Sign In</button>
+            </div>
+        </nav>
+        <div class="header-content">
+            <h1>Unlimited movies, TV shows and more.</h1>
+            <h3>Watch anywhere. Cancel anytime</h3>
+            <p>Ready to watch? Enter your email to create or restart your membership.</p>
+             <form class="email-signup">
+                <input type="email" placeholder="Email address" required="">
+                <button type="submit">Get Started</button>
+             </form>
+        </div>
+    </div>
+    <div class="features">
+        <div class="row">
+             <div class="text-col">
+                <h2>Enjoy on your TV.</h2>
+                <p>Watch on smart TVs, PlayStation, Xbox, Chromecast, Apple TV, Blu-ray players and more.</p>
+             </div>
+             <div class="img-col">
+                 <img src="./My Nextflix Homepage_files/tv.png">
+             </div>
+        </div>
+        <div class="row">
+            <div class="img-col">
+                <img src="./My Nextflix Homepage_files/mobile-0819.jpg">
+            </div>
+            <div class="text-col">
+               <h2>Download your shows to watch offline</h2>
+               <p>Save your favourites easily and always have something to watch.</p>
+            </div>
+            
+       </div>
+       <div class="row">
+        <div class="text-col">
+           <h2>Watch everywhere</h2>
+           <p>Stream unlimited movies and TV shows on your phone, tablet, laptop, and TV.</p>
+        </div>
+        <div class="img-col">
+            <img src="./My Nextflix Homepage_files/device-pile-in.png">
+        </div>
+   </div>
+   <div class="row">
+    <div class="img-col">
+        <img src="./My Nextflix Homepage_files/AAAABVr8nYuAg0xDpXDv0VI9HUoH7r2aGp4TKRCsKNQrMwxzTtr-NlwOHeS8bCI2oeZddmu3nMYr3j9MjYhHyjBASb1FaOGYZNYvPBCL.png">
+    </div>
+    <div class="text-col">
+       <h2>Create profiles for kids</h2>
+       <p>Send children on adventures with their favourite characters in a space made just for them—free with your membership.</p>
+    </div>
+    
+</div>
+
+    </div>
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+</body></html>
